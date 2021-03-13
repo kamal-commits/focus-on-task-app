@@ -12,7 +12,7 @@ export default function CustomButton({ text, handleSubmit, danger }) {
           style={styles.dangerButton}
           uppercase={false}
         >
-          {text}
+          <Text style={styles.text}>{text}</Text>
         </Button>
       ) : (
         <Button
@@ -21,7 +21,7 @@ export default function CustomButton({ text, handleSubmit, danger }) {
           style={styles.button}
           uppercase={false}
         >
-          {text}
+          <Text style={styles.text}>{text}</Text>
         </Button>
       )}
     </View>
@@ -37,5 +37,8 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
     backgroundColor: 'red',
+  },
+  text: {
+    fontSize: 30,
   },
 });

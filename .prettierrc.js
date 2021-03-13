@@ -1,7 +1,6 @@
 module.exports = {
-  bracketSpacing: false,
-  jsxBracketSameLine: true,
+  root: true,
   singleQuote: true,
-  trailingComma: 'all',
-  arrowParens: 'avoid',
+  extends: '@react-native-community',
+  endOfLine: 'auto',
 };
